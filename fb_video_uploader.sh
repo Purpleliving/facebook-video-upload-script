@@ -36,5 +36,8 @@ UPLOAD_RESPONSE=$(curl -X POST "https://graph.facebook.com/$PAGE_ID/videos" \
 # Output the response from Facebook API
 echo "Upload response: $UPLOAD_RESPONSE"
 
+echo "Thank you 4 using my tool"
+echo "Kindly follow me on all platforms"
+
 # Optional: Clean up downloaded video file
 rm "$VIDEO_FILE"
