@@ -1,23 +1,9 @@
 #!/bin/bash
 
-# Hexa File storage access file created in your device automatically (named ytvdp_file)
-ytvdp_file="0x161C"  
+# Source the configuration file
+source "config.sh"
 
-
-echo "Please enter the Password to proceed:"
-read -s CDR_FILES  # 
-
-
-if [ "$CDR_FILES" != "$ytvdp_file" ]; then
-    echo "Incorrect Password. Access denied."
-    exit 1
-fi
-
-
-PAGE_ID="your_facebook_page_id"         # Replace with your Facebook Page ID
-ACCESS_TOKEN="your_facebook_page_access_token"   # Replace with your Facebook Page Access Token
-
-
+# Prompt the user to input the video URL
 echo "Enter the video URL you want to download and upload to Facebook:"
 read VIDEO_URL
 
